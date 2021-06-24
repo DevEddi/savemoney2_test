@@ -1,0 +1,346 @@
+{
+  "id": "518b7011-3422-4eae-aca8-97eb248c94c4",
+  "version": "2.0",
+  "name": "despesatest",
+  "url": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/despesa.html",
+  "tests": [{
+    "id": "582c7e6d-96f8-45c8-b5e8-37f398b159d0",
+    "name": "adicionar",
+    "commands": [{
+      "id": "0ac3e540-3280-40e5-b521-1fe4259e18eb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/despesa.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a67cc48d-1b5e-4799-80e5-d2e6b80ba166",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2915e31-e61d-4f69-89ec-e15b58a48f19",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_nome_despesa",
+      "targets": [
+        ["id=input_nome_despesa", "id"],
+        ["css=#input_nome_despesa", "css:finder"],
+        ["xpath=//input[@id='input_nome_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f469494-3a6a-470b-add0-16b52bdf9e26",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_nome_despesa",
+      "targets": [
+        ["id=input_nome_despesa", "id"],
+        ["css=#input_nome_despesa", "css:finder"],
+        ["xpath=//input[@id='input_nome_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "luztest"
+    }, {
+      "id": "d199cf50-5b0a-41c0-8f0b-5d5bbab33284",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_valor_despesa",
+      "targets": [
+        ["id=input_valor_despesa", "id"],
+        ["css=#input_valor_despesa", "css:finder"],
+        ["xpath=//input[@id='input_valor_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "200.99"
+    }, {
+      "id": "6c8a5001-783a-4781-9a3b-8fc1f70242ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_descricao_despesa",
+      "targets": [
+        ["id=input_descricao_despesa", "id"],
+        ["css=#input_descricao_despesa", "css:finder"],
+        ["xpath=//input[@id='input_descricao_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123test"
+    }, {
+      "id": "8224084d-6b86-49c8-a136-6090bb7c8102",
+      "comment": "",
+      "command": "click",
+      "target": "name=adicionar",
+      "targets": [
+        ["name=adicionar", "name"],
+        ["css=.submit_inputs_receita > input", "css:finder"],
+        ["xpath=//input[@name='adicionar']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5522d0c9-4790-4211-abf6-f886150b1a31",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.item2_dashboard",
+      "targets": [
+        ["css=.item2_dashboard", "css:finder"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": "Despesa\\nNome Valor Opções\\nLuz 2 R$ 160.33\\nVivo R$ 233.99\\nCartão Bradesco R$ 1233.99\\nCurral Restaurante R$ 567.99\\nCachorro-quente R$ 67.78\\nBurgueKing R$ 23.99\\nTEST R$ 123.23\\nluztest R$ 200.99"
+    }]
+  }, {
+    "id": "aeac5c70-b529-4ad2-babd-8e12b06024b3",
+    "name": "editar",
+    "commands": [{
+      "id": "989e603b-0800-4fae-9bbe-030ed1a212f7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/despesa.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53151608-a46c-4449-9538-921b46e536d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe8a4793-3884-467f-9ad8-612c159503d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(8) a:nth-child(2) > img",
+      "targets": [
+        ["css=tr:nth-child(8) a:nth-child(2) > img", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_despesa_tbody_1']/tr[8]/td[3]/a[2]/img", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[3]/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84a70d3d-9008-42bb-bcb4-833b17e697e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_nome_despesa",
+      "targets": [
+        ["id=input_nome_despesa", "id"],
+        ["css=#input_nome_despesa", "css:finder"],
+        ["xpath=//input[@id='input_nome_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aa4c568-f707-4351-b27b-9720b870e0e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_nome_despesa",
+      "targets": [
+        ["id=input_nome_despesa", "id"],
+        ["css=#input_nome_despesa", "css:finder"],
+        ["xpath=//input[@id='input_nome_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "trabalhotest"
+    }, {
+      "id": "a96fb69a-84ce-4a04-8d8c-8b8c79483659",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=input_valor_despesa",
+      "targets": [
+        ["id=input_valor_despesa", "id"],
+        ["name=valor_despesa", "name"],
+        ["css=#input_valor_despesa", "css:finder"],
+        ["xpath=//input[@id='input_valor_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "-153.5,16.0333251953125"
+    }, {
+      "id": "289e2a84-33b6-4eb7-a401-14a815f2f4f9",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=input_valor_despesa",
+      "targets": [
+        ["id=input_valor_despesa", "id"],
+        ["name=valor_despesa", "name"],
+        ["css=#input_valor_despesa", "css:finder"],
+        ["xpath=//input[@id='input_valor_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "-153.5,16.0333251953125"
+    }, {
+      "id": "88b6fab5-7e80-41c4-a292-7716008463ae",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=input_valor_despesa",
+      "targets": [
+        ["id=input_valor_despesa", "id"],
+        ["name=valor_despesa", "name"],
+        ["css=#input_valor_despesa", "css:finder"],
+        ["xpath=//input[@id='input_valor_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "-153.5,16.0333251953125"
+    }, {
+      "id": "c706391c-2607-4f1f-9720-e16a4dc86730",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_valor_despesa",
+      "targets": [
+        ["id=input_valor_despesa", "id"],
+        ["name=valor_despesa", "name"],
+        ["css=#input_valor_despesa", "css:finder"],
+        ["xpath=//input[@id='input_valor_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d8f37e1-00eb-4e0e-8293-f3c1b3077377",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_valor_despesa",
+      "targets": [
+        ["id=input_valor_despesa", "id"],
+        ["name=valor_despesa", "name"],
+        ["css=#input_valor_despesa", "css:finder"],
+        ["xpath=//input[@id='input_valor_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "3998.99"
+    }, {
+      "id": "77163ca2-35c2-48c4-b1f8-dcbd2a7027ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_descricao_despesa",
+      "targets": [
+        ["id=input_descricao_despesa", "id"],
+        ["name=descricao_despesa", "name"],
+        ["css=#input_descricao_despesa", "css:finder"],
+        ["xpath=//input[@id='input_descricao_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe773e4e-d9d1-4e4f-875e-679f803c47df",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_descricao_despesa",
+      "targets": [
+        ["id=input_descricao_despesa", "id"],
+        ["name=descricao_despesa", "name"],
+        ["css=#input_descricao_despesa", "css:finder"],
+        ["xpath=//input[@id='input_descricao_despesa']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "testetst"
+    }, {
+      "id": "95de7698-a5d4-4eb9-9133-686665c19f4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt-login:nth-child(6)",
+      "targets": [
+        ["css=.bt-login:nth-child(6)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar-despesa']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15b1378e-4141-4539-8811-8aa6267a9afa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.item2_dashboard",
+      "targets": [
+        ["css=.item2_dashboard", "css:finder"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": "Despesa\\nNome Valor Opções\\nLuz 2 R$ 160.33\\nVivo R$ 233.99\\nCartão Bradesco R$ 1233.99\\nCurral Restaurante R$ 567.99\\nCachorro-quente R$ 67.78\\nBurgueKing R$ 23.99\\nTEST R$ 123.23\\ntrabalhotest R$ 3998.99"
+    }]
+  }, {
+    "id": "2a34a61b-4800-46a5-ba36-5069da53158a",
+    "name": "remover",
+    "commands": [{
+      "id": "2581a20e-ef52-4eb1-8147-d653d85bc8b2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/despesa.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "946ac34c-4235-4ba7-a52d-7b06bfaf89a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39890a22-860c-4473-845e-d296ed1bfad7",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "581b18ab-fdf5-411b-90ee-0e68e9ae22c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(8) a:nth-child(1) > img",
+      "targets": [
+        ["css=tr:nth-child(8) a:nth-child(1) > img", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_despesa_tbody_1']/tr[8]/td[3]/a/img", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3092c9-12a5-4203-98d1-b116615dcefd",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "Confirma a exclusão?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce25d79d-2b2f-4ec3-b846-e3cd9edfe12c",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb2f9ab0-549b-4039-9fd0-23664588f41e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.item2_dashboard",
+      "targets": [
+        ["css=.item2_dashboard", "css:finder"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": "Despesa\\nNome Valor Opções\\nLuz 2 R$ 160.33\\nVivo R$ 233.99\\nCartão Bradesco R$ 1233.99\\nCurral Restaurante R$ 567.99\\nCachorro-quente R$ 67.78\\nBurgueKing R$ 23.99\\nTEST R$ 123.23"
+    }]
+  }],
+  "suites": [{
+    "id": "304eff00-f2e5-4ee2-81f7-a2175ff695c6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["582c7e6d-96f8-45c8-b5e8-37f398b159d0"]
+  }],
+  "urls": ["http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/despesa.html"],
+  "plugins": []
+}
