@@ -1,0 +1,336 @@
+{
+  "id": "836cc935-51ba-40a5-a5ad-99b2e08edf22",
+  "version": "2.0",
+  "name": "savemoney",
+  "url": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/receita.html",
+  "tests": [{
+    "id": "3ce67444-bcd1-4bde-a619-4b84962a8b4f",
+    "name": "adicionar",
+    "commands": [{
+      "id": "5f23bdf5-cc79-4012-8f77-1fca65e17b14",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/receita.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a8b82dc-e38b-4bec-add4-3ecd76f3d20a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fd77844-0177-49c9-8499-59c41bfeef71",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["name=nome_receita", "name"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35838e32-d393-4e4e-b66f-e21fda6f9706",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["name=nome_receita", "name"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test11"
+    }, {
+      "id": "96975b92-8332-48bc-b0e6-96c60dd063c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123.23"
+    }, {
+      "id": "42c84481-8fc9-4f72-9d79-a45c5da001ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_descricao_receita",
+      "targets": [
+        ["id=input_descricao_receita", "id"],
+        ["name=descricao_receita", "name"],
+        ["css=#input_descricao_receita", "css:finder"],
+        ["xpath=//input[@id='input_descricao_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test11"
+    }, {
+      "id": "9fc76f7e-8445-4dcf-9f2b-d45532b61b66",
+      "comment": "",
+      "command": "click",
+      "target": "name=adicionar",
+      "targets": [
+        ["name=adicionar", "name"],
+        ["css=.submit_inputs_receita > input", "css:finder"],
+        ["xpath=//input[@name='adicionar']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cba2483-dff0-4823-a1f5-1442459fe64d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.item2_dashboard",
+      "targets": [
+        ["css=.item2_dashboard", "css:finder"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": "Receitas\\nNome Valor Opções\\nVenda de Bolo R$ 5\\nVenda de Bolo R$ 20\\nPix Victoria R$ 300\\nSalário Julho R$ 145.1\\ntest_marco R$ 123.23\\ntest11 R$ 123.23"
+    }]
+  }, {
+    "id": "8e49b022-46bd-479f-84fc-b8eb26931e7b",
+    "name": "editar",
+    "commands": [{
+      "id": "e0b20843-37d5-4bb0-87eb-f0fa1545706c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/receita.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f02bd7c7-bd3a-40da-a498-1fa61d9db643",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "611da283-99a4-4b0b-b1ba-d9039276a196",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(6) a:nth-child(2) > img",
+      "targets": [
+        ["css=tr:nth-child(6) a:nth-child(2) > img", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_receita_tbody_1']/tr[6]/td[3]/a[2]/img", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e02b1eb1-ca97-4472-8154-fba370980a22",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33bb5816-2e20-4fd8-b23c-cac5e5bcd58f",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtrabalho"
+    }, {
+      "id": "7a62f58b-cc84-4e58-b108-7a0917440a36",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "-83.5,19.0333251953125"
+    }, {
+      "id": "b79f447e-82f8-4e63-8510-a3c74a059c58",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "-83.5,19.0333251953125"
+    }, {
+      "id": "a36b2e06-0dcb-4dc2-8a01-c379b22750c4",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "-83.5,19.0333251953125"
+    }, {
+      "id": "1b286a23-09ce-43de-b9bc-5d647062625b",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "043d3f51-19bf-4750-8457-c22a683456d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1200.99"
+    }, {
+      "id": "5e1b0f0e-2bae-43d4-957b-8b8889f40174",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_descricao_receita",
+      "targets": [
+        ["id=input_descricao_receita", "id"],
+        ["name=descricao_receita", "name"],
+        ["css=#input_descricao_receita", "css:finder"],
+        ["xpath=//input[@id='input_descricao_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "testtrabalho"
+    }, {
+      "id": "34fd8068-6ebf-471c-8928-89b984796512",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt-login:nth-child(6)",
+      "targets": [
+        ["css=.bt-login:nth-child(6)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad4bff62-b7ee-4a04-bc4a-72df6bd68d8b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.item2_dashboard",
+      "targets": [
+        ["css=.item2_dashboard", "css:finder"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": "Receitas\\nNome Valor Opções\\nVenda de Bolo R$ 5\\nVenda de Bolo R$ 20\\nPix Victoria R$ 300\\nSalário Julho R$ 145.1\\ntest_marco R$ 123.23\\ntesttrabalho R$ 1200.99"
+    }]
+  }, {
+    "id": "e2874457-a607-4b5f-b0de-8c9dac02a1c8",
+    "name": "remover",
+    "commands": [{
+      "id": "8c63d744-b1c9-4286-b9ad-b76258218ab9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/receita.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3da8c71-a56d-443b-9926-1a46929dd3e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfc08859-96cd-4abc-853f-11879b7d2ca8",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c97486e-9de0-4c30-b4c2-493b314a1d1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(6) a:nth-child(1) > img",
+      "targets": [
+        ["css=tr:nth-child(6) a:nth-child(1) > img", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_receita_tbody_1']/tr[6]/td[3]/a/img", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae27e003-3cfa-4d4c-a8ad-ec25862ff96e",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "Confirma a exclusão?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d94cb0c-f857-4583-a1db-9348113963ba",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76c85ef2-5d4a-4bc3-96ef-e73522a644e9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.item2_dashboard",
+      "targets": [
+        ["css=.item2_dashboard", "css:finder"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": "Receitas\\nNome Valor Opções\\nVenda de Bolo R$ 5\\nVenda de Bolo R$ 20\\nPix Victoria R$ 300\\nSalário Julho R$ 145.1\\ntest_marco R$ 123.23"
+    }]
+  }],
+  "suites": [{
+    "id": "72d8cf44-2761-4142-b531-b07a0211514b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:63342/Apresent_Marco/PROJETO/savemoney_project_2/project_savemoney_2/app/Usuario/receita.html"],
+  "plugins": []
+}

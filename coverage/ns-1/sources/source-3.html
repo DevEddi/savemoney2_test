@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > TipoValor</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+    @import "../../.css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../.js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example.savemoneyback_end</a>
+</div>
+
+<h1>Coverage Summary for Class: TipoValor (com.example.savemoneyback_end)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">TipoValor</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (25/25)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.example.savemoneyback_end;
+<i class="no-highlight">2</i>&nbsp;
+<b class="fc"><i class="no-highlight">3</i>&nbsp;public class TipoValor {</b>
+<i class="no-highlight">4</i>&nbsp;
+<i class="no-highlight">5</i>&nbsp;    public String categoriaValor(IReceita valor_receita){
+<i class="no-highlight">6</i>&nbsp;
+<b class="fc"><i class="no-highlight">7</i>&nbsp;        double valor = valor_receita.getValor_receita();</b>
+<i class="no-highlight">8</i>&nbsp;
+<b class="fc"><i class="no-highlight">9</i>&nbsp;        if(valor &gt; 50){ //1</b>
+<b class="fc"><i class="no-highlight">10</i>&nbsp;            if (valor &lt; 100) { //2</b>
+<b class="fc"><i class="no-highlight">11</i>&nbsp;                return &quot;É um bom valor para começar!&quot; ; //3</b>
+<b class="fc"><i class="no-highlight">12</i>&nbsp;            }else if (valor &lt; 200) { //4</b>
+<b class="fc"><i class="no-highlight">13</i>&nbsp;                return &quot;Devagar vamos longe.&quot;; //5</b>
+<b class="fc"><i class="no-highlight">14</i>&nbsp;            } else if (valor &lt; 300) { //6</b>
+<b class="fc"><i class="no-highlight">15</i>&nbsp;                return &quot;Acumulando e acumulando&quot;; //7</b>
+<b class="fc"><i class="no-highlight">16</i>&nbsp;            } else if (valor &lt; 400) { //8</b>
+<b class="fc"><i class="no-highlight">17</i>&nbsp;                return &quot;Bora bora!&quot;; //9</b>
+<b class="fc"><i class="no-highlight">18</i>&nbsp;            } else if (valor &lt; 500) {  //10</b>
+<b class="fc"><i class="no-highlight">19</i>&nbsp;                return &quot;Quase quinhentos, hein.&quot;;  //11</b>
+<b class="fc"><i class="no-highlight">20</i>&nbsp;            } else if (valor &lt; 600) { //12</b>
+<b class="fc"><i class="no-highlight">21</i>&nbsp;                return &quot;Boa, tá no foco!&quot;;  //13</b>
+<b class="fc"><i class="no-highlight">22</i>&nbsp;            } else if (valor &lt; 700) { //14</b>
+<b class="fc"><i class="no-highlight">23</i>&nbsp;                return &quot;Deixou de ir no mercado?&quot;; //15</b>
+<b class="fc"><i class="no-highlight">24</i>&nbsp;            } else if (valor &lt; 800) { //16</b>
+<b class="fc"><i class="no-highlight">25</i>&nbsp;                return &quot;Grana da viagem, OK!&quot;; //17</b>
+<b class="fc"><i class="no-highlight">26</i>&nbsp;            } else if (valor &lt; 900) { //18</b>
+<b class="fc"><i class="no-highlight">27</i>&nbsp;                return &quot;Virou economista?&quot;; //19</b>
+<b class="fc"><i class="no-highlight">28</i>&nbsp;            } else if (valor == 1000) {  //20</b>
+<b class="fc"><i class="no-highlight">29</i>&nbsp;                return &quot;Milzão? Tá bem na fita!&quot;; //21</b>
+<i class="no-highlight">30</i>&nbsp;            } else {
+<b class="fc"><i class="no-highlight">31</i>&nbsp;                return &quot;Nossa! Que baita grana.&quot;; //22</b>
+<i class="no-highlight">32</i>&nbsp;            }
+<i class="no-highlight">33</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">34</i>&nbsp;        return &quot;Nem precisa cadastrar, guarda no cofre.&quot;; //23</b>
+<i class="no-highlight">35</i>&nbsp;    }
+<i class="no-highlight">36</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-06-23 20:49</div>
+</div>
+</body>
+</html>
