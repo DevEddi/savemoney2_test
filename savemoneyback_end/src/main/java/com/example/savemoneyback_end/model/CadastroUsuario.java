@@ -13,48 +13,46 @@ public class CadastroUsuario {
 
 
     public String cadastroNovoUsuario() {
-        switch(tipoUsuario) {
-            case "pessoaFisica":
-                    if (idade < 18){
-                        return "Não pode criar uma conta";
+        switch(tipoUsuario) {                                              //1
+            case "pessoaFisica":                                           //2
+                    if (idade < 18){                                       //3
+                        return "Nao pode criar uma conta";                 //4
                     }else{
-                        return "Ok, maior de 18 anos";
+                        return "Ok, maior de 18 anos";                      //5
                     }
-            case "pessoaJuridica":
-                switch(tipoEmpresaJuridica) {
-                    case "autonomo":
-                        if (lucroEmpresa <= 60000){
-                            return "Voce se classfica como Autonomo";
+            case "pessoaJuridica":                                          //6
+                switch(tipoEmpresaJuridica) {                               //7
+                    case "autonomo":                                        //8
+                        if (lucroEmpresa <= 60000){                         //9
+                            return "Voce se classifica como Autonomo";      //10
                         }else{
-                            return "Voce não se classifica";
+                            return "Voce nao se classifica";                //11
                         }
-                    case "mei":
+                    case "mei":                                             //12
                         if (lucroEmpresa <= 80000){
-                            return "Voce se classfica como MEI";
+                            return "Voce se classfica como MEI";            //13
                         }else{
-                            return "Voce não se classifica";
+                            return "Voce nao se classifica";                //14
                         }
-                    case "empresarioIndividual":
-                        if (lucroEmpresa <= 300000){
-                            return "Voce se classfica como MEI";
+                    case "empresarioIndividual":                            //15
+                        if (lucroEmpresa <= 300000){                        //16
+                            return "Voce se classfica como MEI";            //17
                         }else{
-                            return "Voce não se classifica";
-                        }
-
-                    case "sociedade":
-                        if (lucroEmpresa <= 1000000){
-                            return "Voce se classfica como MEI";
-                        }else{
-                            return "Voce não se classifica";
+                            return "Voce nao se classifica";                //18
                         }
 
+                    case "sociedade":                                       //19
+                        if (lucroEmpresa <= 1000000){                       //19
+                            return "Voce se classfica como MEI";            //20
+                        }else{
+                            return "Voce nao se classifica";                //20
+                        }
+                        /*break; <==== Não sei porque*/
                 }
-                break;
-            default:
-                return "Não pode realizar o cadastro";
-        }
 
-        return null;
+            }
+
+      return "Erro a criar conta";                                          //21
     }
 
     public int getIdade() {
