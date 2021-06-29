@@ -25,23 +25,21 @@ public class CadastroUsuario {
                 }
             } else if (tipoEmpresaJuridica == "mei") {                //10
                 if (lucroEmpresa <= 80000) {                         //11
-                    return "Voce se classfica como MEI";            //12
+                    return "Voce se classifica como MEI";            //12
                 } else {
                     return "Voce nao se classifica";                //13
                 }
             } else if (tipoEmpresaJuridica == "sociedade") {             //14
                 if (lucroEmpresa <= 1000000) {                       //15
-                    return "Voce se classfica como MEI";            //16
+                    return "Voce nao se classifica";            //16
                 } else {
-                    return "Voce nao se classifica";                //17
+                    return "Voce se classfica como Sociedade";                //17
                 }
-            } else {
-                return "Falha falta tipo pessoa;";                           //18
             }
 
         }
 
-        return "Erro";                                                //19
+        return "Erro";                                                //18
     }
 
 
