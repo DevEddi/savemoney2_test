@@ -8,33 +8,28 @@ public class CadastroUsuario {
     private int dataNascimento;
     private int lucroEmpresa;
     private String tipoEmpresaJuridica;
-    private String pessoaJuridica;
-    private String autonomo;
-    private String mei;
-    private String sociedade;
-    private String pessoaFisica;
 
     public String cadastroNovoUsuario() {
-        if (tipoUsuario == pessoaFisica) {                        //1
+        if (tipoUsuario == "pessoaFisica") {                        //1
             if (idade < 18) {                                       //2
                 return "Nao pode criar uma conta";                 //3
             } else {
                 return "Ok, maior de 18 anos";                      //4
             }
-        } else if (tipoUsuario == pessoaJuridica) {                 //5
-            if (tipoEmpresaJuridica == autonomo) {                  //6
+        } else if (tipoUsuario == "pessoaJuridica") {                 //5
+            if (tipoEmpresaJuridica == "autonomo") {                  //6
                 if (lucroEmpresa <= 60000) {                        //7
                     return "Voce se classifica como Autonomo";      //8
                 } else {
                     return "Voce nao se classifica";                //9
                 }
-            } else if (tipoEmpresaJuridica == mei) {                //10
+            } else if (tipoEmpresaJuridica == "mei") {                //10
                 if (lucroEmpresa <= 80000) {                         //11
                     return "Voce se classfica como MEI";            //12
                 } else {
                     return "Voce nao se classifica";                //13
                 }
-            } else if (tipoEmpresaJuridica == sociedade) {             //14
+            } else if (tipoEmpresaJuridica == "sociedade") {             //14
                 if (lucroEmpresa <= 1000000) {                       //15
                     return "Voce se classfica como MEI";            //16
                 } else {
@@ -49,37 +44,6 @@ public class CadastroUsuario {
         return "Erro";                                                //19
     }
 
-    public String getPessoaJuridica() {
-        return pessoaJuridica;
-    }
-
-    public void setPessoaJuridica(String pessoaJuridica) {
-        this.pessoaJuridica = pessoaJuridica;
-    }
-
-    public String getAutonomo() {
-        return autonomo;
-    }
-
-    public void setAutonomo(String autonomo) {
-        this.autonomo = autonomo;
-    }
-
-    public String getMei() {
-        return mei;
-    }
-
-    public void setMei(String mei) {
-        this.mei = mei;
-    }
-
-    public String getSociedade() {
-        return sociedade;
-    }
-
-    public void setSociedade(String sociedade) {
-        this.sociedade = sociedade;
-    }
 
     public int getIdade() {
         return idade;
@@ -113,19 +77,12 @@ public class CadastroUsuario {
         this.lucroEmpresa = lucroEmpresa;
     }
 
+
     public String getTipoEmpresaJuridica() {
         return tipoEmpresaJuridica;
     }
 
     public void setTipoEmpresaJuridica(String tipoEmpresaJuridica) {
         this.tipoEmpresaJuridica = tipoEmpresaJuridica;
-    }
-
-    public String getPessoaFisica() {
-        return pessoaFisica;
-    }
-
-    public void setPessoaFisica(String pessoaFisica) {
-        this.pessoaFisica = pessoaFisica;
     }
 }
