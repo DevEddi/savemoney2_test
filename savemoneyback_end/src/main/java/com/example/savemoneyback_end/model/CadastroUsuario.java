@@ -1,42 +1,48 @@
 package com.example.savemoneyback_end.model;
 
 public class CadastroUsuario {
-
-
     private int idade;
     private String tipoUsuario;
     private int dataNascimento;
     private int lucroEmpresa;
     private String tipoEmpresaJuridica;
+    private String resultado;
 
-    public String cadastroNovoUsuario() {
-        if (tipoUsuario == "pessoaFisica") {                           //1
-            if (idade < 18) {                                          //2
-                return "Nao pode criar uma conta";                     //3
+    public String cadastroNovoUsuario() throws Exception{
+        if(tipoUsuario == "invalido"){ //1
+            throw new NullPointerException ("Erro"); //2
+        }
+        else if (tipoUsuario == "pessoaFisica") { //3
+            if (idade < 18) {   //4
+                resultado = "Nao pode criar uma conta";//5
             } else {
-                return "Ok, maior de 18 anos";                          //4
+                resultado = "Ok, maior de 18 anos"; //6
             }
-        } else if (tipoUsuario == "pessoaJuridica") {                   //5
-            if (tipoEmpresaJuridica == "autonomo") {                    //6
-                if (lucroEmpresa <= 60000) {                           //7
-                    return "Voce se classifica como Autonomo";         //8
+        } else {
+            if (tipoEmpresaJuridica == "autonomo") {      //7
+                if (lucroEmpresa <= 60000) {    //8
+                    resultado = "Voce se classifica como Autonomo"; //9
                 } else {
-                    return "Voce nao se classifica";                   //9
+                    resultado = "Voce nao se classifica"; //10
                 }
-            } else if (tipoEmpresaJuridica == "mei") {                //10
-                if (lucroEmpresa <= 80000) {                          //11
-                    return "Voce se classifica como MEI";             //12
+            } else if (tipoEmpresaJuridica == "mei") {   //11
+                if (lucroEmpresa <= 80000) {        //12
+                    resultado = "Voce se classifica como MEI"; //13
                 } else {
-                    return "Voce nao se classifica";                  //13
+                    resultado = "Voce nao se classifica"; //14
                 }
-            } else if (tipoEmpresaJuridica == "sociedade") {          //14
-                if (lucroEmpresa <= 1000000) {                        //15
-                    return "Voce nao se classifica";                  //16
+            } else if (tipoEmpresaJuridica == "sociedade") {    //15
+                if (lucroEmpresa <= 1000000) {        //16
+                    resultado = "Voce nao se classifica"; //17
                 } else {
-                    return "Voce se classfica como Sociedade";        //17
-                } }
-        }return "Erro";                                                //18
-    }
+                    resultado = "Voce se classfica como Sociedade"; //18
+                }
+            } else if (tipoEmpresaJuridica == "epp") {  //19
+                    resultado = "Voce se classfica como Empresa de Pequeno Porte";  //20
+                }
+            } return resultado; //21
+        } //22
+
 
 
     public int getIdade() {
@@ -70,7 +76,6 @@ public class CadastroUsuario {
     public void setLucroEmpresa(int lucroEmpresa) {
         this.lucroEmpresa = lucroEmpresa;
     }
-
 
     public String getTipoEmpresaJuridica() {
         return tipoEmpresaJuridica;

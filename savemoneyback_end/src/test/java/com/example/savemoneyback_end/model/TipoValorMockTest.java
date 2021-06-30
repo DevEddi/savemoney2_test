@@ -1,5 +1,7 @@
-package com.example.savemoneyback_end;
+package com.example.savemoneyback_end.model;
 
+import com.example.savemoneyback_end.IReceita;
+import com.example.savemoneyback_end.model.TipoValor;
 import junit.framework.TestCase;
 
 import static org.easymock.EasyMock.*;
