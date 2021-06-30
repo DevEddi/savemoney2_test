@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html id="htmlId">
 <head>
-  <title>Coverage Report > TipoValor</title>
+  <title>Coverage Report > Receita</title>
   <style type="text/css">
     @import "../../.css/coverage.css";
     @import "../../.css/highlight-idea.css";
@@ -17,10 +17,10 @@
 <div class="breadCrumbs">
 Current scope:     <a href="../../index.html">all classes</a>
     <span class="separator">|</span>
-    <a href="../index.html">com.example.savemoneyback_end</a>
+    <a href="../index.html">com.example.savemoneyback_end.model</a>
 </div>
 
-<h1>Coverage Summary for Class: TipoValor (com.example.savemoneyback_end)</h1>
+<h1>Coverage Summary for Class: Receita (com.example.savemoneyback_end.model)</h1>
 
 <table class="coverageStats">
 <tr>
@@ -39,29 +39,29 @@ Current scope:     <a href="../../index.html">all classes</a>
 </th>
 </tr>
 <tr>
-  <td class="name">TipoValor</td>
+  <td class="name">Receita</td>
 <td class="coverageStat">
   <span class="percent">
-    100%
+    0%
   </span>
   <span class="absValue">
-    (1/1)
+    (0/1)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    100%
+    0%
   </span>
   <span class="absValue">
-    (2/2)
+    (0/9)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    100%
+    0%
   </span>
   <span class="absValue">
-    (25/25)
+    (0/9)
   </span>
 </td>
 </tr>
@@ -73,42 +73,61 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 
 <pre>
-<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.example.savemoneyback_end;
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.example.savemoneyback_end.model;
 <i class="no-highlight">2</i>&nbsp;
-<b class="fc"><i class="no-highlight">3</i>&nbsp;public class TipoValor {</b>
-<i class="no-highlight">4</i>&nbsp;
-<i class="no-highlight">5</i>&nbsp;    public String categoriaValor(IReceita valor_receita){
-<i class="no-highlight">6</i>&nbsp;
-<b class="fc"><i class="no-highlight">7</i>&nbsp;        double valor = valor_receita.getValor_receita();</b>
-<i class="no-highlight">8</i>&nbsp;
-<b class="fc"><i class="no-highlight">9</i>&nbsp;        if(valor &gt; 50){ //1</b>
-<b class="fc"><i class="no-highlight">10</i>&nbsp;            if (valor &lt; 100) { //2</b>
-<b class="fc"><i class="no-highlight">11</i>&nbsp;                return &quot;É um bom valor para começar!&quot; ; //3</b>
-<b class="fc"><i class="no-highlight">12</i>&nbsp;            }else if (valor &lt; 200) { //4</b>
-<b class="fc"><i class="no-highlight">13</i>&nbsp;                return &quot;Devagar vamos longe.&quot;; //5</b>
-<b class="fc"><i class="no-highlight">14</i>&nbsp;            } else if (valor &lt; 300) { //6</b>
-<b class="fc"><i class="no-highlight">15</i>&nbsp;                return &quot;Acumulando e acumulando&quot;; //7</b>
-<b class="fc"><i class="no-highlight">16</i>&nbsp;            } else if (valor &lt; 400) { //8</b>
-<b class="fc"><i class="no-highlight">17</i>&nbsp;                return &quot;Bora bora!&quot;; //9</b>
-<b class="fc"><i class="no-highlight">18</i>&nbsp;            } else if (valor &lt; 500) {  //10</b>
-<b class="fc"><i class="no-highlight">19</i>&nbsp;                return &quot;Quase quinhentos, hein.&quot;;  //11</b>
-<b class="fc"><i class="no-highlight">20</i>&nbsp;            } else if (valor &lt; 600) { //12</b>
-<b class="fc"><i class="no-highlight">21</i>&nbsp;                return &quot;Boa, tá no foco!&quot;;  //13</b>
-<b class="fc"><i class="no-highlight">22</i>&nbsp;            } else if (valor &lt; 700) { //14</b>
-<b class="fc"><i class="no-highlight">23</i>&nbsp;                return &quot;Deixou de ir no mercado?&quot;; //15</b>
-<b class="fc"><i class="no-highlight">24</i>&nbsp;            } else if (valor &lt; 800) { //16</b>
-<b class="fc"><i class="no-highlight">25</i>&nbsp;                return &quot;Grana da viagem, OK!&quot;; //17</b>
-<b class="fc"><i class="no-highlight">26</i>&nbsp;            } else if (valor &lt; 900) { //18</b>
-<b class="fc"><i class="no-highlight">27</i>&nbsp;                return &quot;Virou economista?&quot;; //19</b>
-<b class="fc"><i class="no-highlight">28</i>&nbsp;            } else if (valor == 1000) {  //20</b>
-<b class="fc"><i class="no-highlight">29</i>&nbsp;                return &quot;Milzão? Tá bem na fita!&quot;; //21</b>
-<i class="no-highlight">30</i>&nbsp;            } else {
-<b class="fc"><i class="no-highlight">31</i>&nbsp;                return &quot;Nossa! Que baita grana.&quot;; //22</b>
-<i class="no-highlight">32</i>&nbsp;            }
-<i class="no-highlight">33</i>&nbsp;        }
-<b class="fc"><i class="no-highlight">34</i>&nbsp;        return &quot;Nem precisa cadastrar, guarda no cofre.&quot;; //23</b>
-<i class="no-highlight">35</i>&nbsp;    }
-<i class="no-highlight">36</i>&nbsp;}
+<i class="no-highlight">3</i>&nbsp;
+<i class="no-highlight">4</i>&nbsp;import javax.persistence.Entity;
+<i class="no-highlight">5</i>&nbsp;import javax.persistence.GeneratedValue;
+<i class="no-highlight">6</i>&nbsp;import javax.persistence.GenerationType;
+<i class="no-highlight">7</i>&nbsp;import javax.persistence.Id;
+<i class="no-highlight">8</i>&nbsp;import javax.persistence.Table;
+<i class="no-highlight">9</i>&nbsp;
+<i class="no-highlight">10</i>&nbsp;@Entity
+<i class="no-highlight">11</i>&nbsp;@Table(name=&quot;receita&quot;)
+<b class="nc"><i class="no-highlight">12</i>&nbsp;public class Receita {</b>
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;
+<i class="no-highlight">15</i>&nbsp;    @Id
+<i class="no-highlight">16</i>&nbsp;    @GeneratedValue(strategy= GenerationType.AUTO)
+<i class="no-highlight">17</i>&nbsp;
+<i class="no-highlight">18</i>&nbsp;    private long id;
+<i class="no-highlight">19</i>&nbsp;    private String nome_receita;
+<i class="no-highlight">20</i>&nbsp;    private Double valor_receita;
+<i class="no-highlight">21</i>&nbsp;    private String descricao_receita;
+<i class="no-highlight">22</i>&nbsp;
+<i class="no-highlight">23</i>&nbsp;
+<i class="no-highlight">24</i>&nbsp;    public long getId() {
+<b class="nc"><i class="no-highlight">25</i>&nbsp;        return id;</b>
+<i class="no-highlight">26</i>&nbsp;    }
+<i class="no-highlight">27</i>&nbsp;
+<i class="no-highlight">28</i>&nbsp;    public void setId(long id) {
+<b class="nc"><i class="no-highlight">29</i>&nbsp;        this.id = id;</b>
+<i class="no-highlight">30</i>&nbsp;    }
+<i class="no-highlight">31</i>&nbsp;
+<i class="no-highlight">32</i>&nbsp;    public String getNome_receita() {
+<b class="nc"><i class="no-highlight">33</i>&nbsp;        return nome_receita;</b>
+<i class="no-highlight">34</i>&nbsp;    }
+<i class="no-highlight">35</i>&nbsp;
+<i class="no-highlight">36</i>&nbsp;    public void setNome_receita(String nome_receita) {
+<b class="nc"><i class="no-highlight">37</i>&nbsp;        this.nome_receita = nome_receita;</b>
+<i class="no-highlight">38</i>&nbsp;    }
+<i class="no-highlight">39</i>&nbsp;
+<i class="no-highlight">40</i>&nbsp;    public Double getValor_receita() {
+<b class="nc"><i class="no-highlight">41</i>&nbsp;        return valor_receita;</b>
+<i class="no-highlight">42</i>&nbsp;    }
+<i class="no-highlight">43</i>&nbsp;
+<i class="no-highlight">44</i>&nbsp;    public void setValor_receita(Double valor_receita) {
+<b class="nc"><i class="no-highlight">45</i>&nbsp;        this.valor_receita = valor_receita;</b>
+<i class="no-highlight">46</i>&nbsp;    }
+<i class="no-highlight">47</i>&nbsp;
+<i class="no-highlight">48</i>&nbsp;    public String getDescricao_receita() {
+<b class="nc"><i class="no-highlight">49</i>&nbsp;        return descricao_receita;</b>
+<i class="no-highlight">50</i>&nbsp;    }
+<i class="no-highlight">51</i>&nbsp;
+<i class="no-highlight">52</i>&nbsp;    public void setDescricao_receita(String descricao_receita) {
+<b class="nc"><i class="no-highlight">53</i>&nbsp;        this.descricao_receita = descricao_receita;</b>
+<i class="no-highlight">54</i>&nbsp;    }
+<i class="no-highlight">55</i>&nbsp;}
 </div>
 </pre>
 </div>
@@ -135,7 +154,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2021-06-23 20:49</div>
+    <div style="float:right;">generated on 2021-06-28 22:34</div>
 </div>
 </body>
 </html>
