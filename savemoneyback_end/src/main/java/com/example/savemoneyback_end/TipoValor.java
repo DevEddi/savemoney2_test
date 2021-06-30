@@ -3,9 +3,7 @@ package com.example.savemoneyback_end;
 public class TipoValor {
 
     public String categoriaValor(IReceita valor_receita){
-
         double valor = valor_receita.getValor_receita();
-
         if(valor > 50){ //1
             if (valor < 100) { //2
                 return "É um bom valor para começar!" ; //3
@@ -30,7 +28,6 @@ public class TipoValor {
             } else {
                 return "Nossa! Que baita grana."; //22
             }
-        }
-        return "Nem precisa cadastrar, guarda no cofre."; //23
+        }return "Nem precisa cadastrar, guarda no cofre."; //23
     }
 }

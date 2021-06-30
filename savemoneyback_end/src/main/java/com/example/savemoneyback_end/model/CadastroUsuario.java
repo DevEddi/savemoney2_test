@@ -10,36 +10,32 @@ public class CadastroUsuario {
     private String tipoEmpresaJuridica;
 
     public String cadastroNovoUsuario() {
-        if (tipoUsuario == "pessoaFisica") {                        //1
-            if (idade < 18) {                                       //2
-                return "Nao pode criar uma conta";                 //3
+        if (tipoUsuario == "pessoaFisica") {                           //1
+            if (idade < 18) {                                          //2
+                return "Nao pode criar uma conta";                     //3
             } else {
-                return "Ok, maior de 18 anos";                      //4
+                return "Ok, maior de 18 anos";                          //4
             }
-        } else if (tipoUsuario == "pessoaJuridica") {                 //5
-            if (tipoEmpresaJuridica == "autonomo") {                  //6
-                if (lucroEmpresa <= 60000) {                        //7
-                    return "Voce se classifica como Autonomo";      //8
+        } else if (tipoUsuario == "pessoaJuridica") {                   //5
+            if (tipoEmpresaJuridica == "autonomo") {                    //6
+                if (lucroEmpresa <= 60000) {                           //7
+                    return "Voce se classifica como Autonomo";         //8
                 } else {
-                    return "Voce nao se classifica";                //9
+                    return "Voce nao se classifica";                   //9
                 }
             } else if (tipoEmpresaJuridica == "mei") {                //10
-                if (lucroEmpresa <= 80000) {                         //11
-                    return "Voce se classifica como MEI";            //12
+                if (lucroEmpresa <= 80000) {                          //11
+                    return "Voce se classifica como MEI";             //12
                 } else {
-                    return "Voce nao se classifica";                //13
+                    return "Voce nao se classifica";                  //13
                 }
-            } else if (tipoEmpresaJuridica == "sociedade") {             //14
-                if (lucroEmpresa <= 1000000) {                       //15
-                    return "Voce nao se classifica";            //16
+            } else if (tipoEmpresaJuridica == "sociedade") {          //14
+                if (lucroEmpresa <= 1000000) {                        //15
+                    return "Voce nao se classifica";                  //16
                 } else {
-                    return "Voce se classfica como Sociedade";                //17
-                }
-            }
-
-        }
-
-        return "Erro";                                                //18
+                    return "Voce se classfica como Sociedade";        //17
+                } }
+        }return "Erro";                                                //18
     }
 
 
